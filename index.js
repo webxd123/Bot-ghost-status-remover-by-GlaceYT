@@ -38,7 +38,9 @@ app.listen(port, () => {
 });
 
 const statusMessages = ["💫 Watching stars"];
-let currentIndex = 0;
+const statusTypes = [ 'dnd' ];
+let currentStatusIndex = 0;
+let currentTypeIndex = 0;
 
 async function login() {
   try {
